@@ -7,8 +7,27 @@
   </p>    
 </div>
 //-->
-
+<br>
+<p>
+</p>
+</br>
+<br>
+<p>
+</p>
+</br>
+<br>
+<p>
+</p>
+</br>
+<br>
+<p>
+</p>
+</br>
 <div class="inner cover">
+    <% if user_signed_in? %>
+          # do something
+          <% else %>
+
     <h1 class="cover-heading">Welcome to DI.</h1>
 
     
@@ -16,8 +35,13 @@
     
 
     <p>
-       <%= link_to "Log in", "#", class: "btn btn-default btn-lg" %>
-       <%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %>
+       
+     
+       <p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+  <% end %>
   </p>
 
 </div>
