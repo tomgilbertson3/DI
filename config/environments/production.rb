@@ -78,6 +78,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Required for Heroku
-  config.action_mailer.default_url_options = { :host => 'http://hidden-dawn-9734.herokuapp.com/' }
-  config.serve_static_assets = true
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  
 end
